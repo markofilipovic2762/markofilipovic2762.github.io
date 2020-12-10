@@ -24,6 +24,14 @@ img {
     width: 100%;
 }
 
+.zoom-in {
+    transition: transform .5s, visibility .5s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
 .nav-container {
     background: #6700EE;
 
@@ -279,7 +287,7 @@ img.right.transition2 {
     }
 
     section#aboutme.featured {
-        margin-top: 250px;
+        margin-top: 200px;
     }
 
     .social-header {

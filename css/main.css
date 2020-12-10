@@ -23,6 +23,18 @@ img {
   width: 100%;
 }
 
+.zoom-in {
+  -webkit-transition: visibility .5s, -webkit-transform .5s;
+  transition: visibility .5s, -webkit-transform .5s;
+  transition: transform .5s, visibility .5s;
+  transition: transform .5s, visibility .5s, -webkit-transform .5s;
+}
+
+.zoom-in:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .nav-container {
   background: #6700EE;
 }
@@ -273,7 +285,7 @@ img.right.transition2 {
     padding: 4em;
   }
   section#aboutme.featured {
-    margin-top: 250px;
+    margin-top: 200px;
   }
   .social-header {
     display: block;
