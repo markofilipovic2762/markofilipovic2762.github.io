@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     height: 100vh;
     margin: 0;
@@ -125,6 +129,7 @@ img.right.transition2 {
     margin-top: -40px;
     max-width: 200px;
     max-height: 300px;
+    border-radius: 50%;
 }
 
 .subtitle {
@@ -271,10 +276,10 @@ img.right.transition2 {
 
     section {
         padding: 4em;
+    }
 
-        .featured {
-            margin-top: 300px;
-        }
+    section#aboutme.featured {
+        margin-top: 250px;
     }
 
     .social-header {

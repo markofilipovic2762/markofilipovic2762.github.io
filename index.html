@@ -25,7 +25,7 @@
                 <ul>
                     <li><a href="#work">My work</a></li>
                     <li><a href="#skills">My skills</a></li>
-                    <li><a href="#">Hire me</a></li>
+                    <li><a href="#contact">Hire me</a></li>
                 </ul>
             </nav>
         </header>
@@ -162,7 +162,7 @@
             directly. I will come back to you within
             a matter of hours to help you.</p>
 
-        <div class="row">
+        <div class="row" id="contact">
 
             <!--Grid column-->
             <div class="col-md-9 mb-md-0 mb-5">
@@ -314,7 +314,7 @@
         new TypeIt("#typeit", {
                 speed: 55,
                 waitUntilVisible: true
-            }).type("Hi, I am Marko Filipovic :").exec(async () => {
+            }).type("Hello, I am Marko Filipovic :").exec(async () => {
                 //-- Return a promise that resolves after something happens.
                 await new Promise((resolve, reject) => {
                     setTimeout(() => {
@@ -332,7 +332,7 @@
             .type("programmer")
             .break()
             .pause(200)
-            .type("and designer !")
+            .type("and web designer !")
             .go();
     </script>
 </body>
