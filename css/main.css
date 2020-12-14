@@ -143,7 +143,10 @@ img.right.transition2 {
   margin-top: -40px;
   max-width: 200px;
   max-height: 300px;
-  border-radius: 50%;
+  border-radius: 10%;
+  border: 2px solid #6E00FF;
+  -webkit-box-shadow: 5px 10px 8px #888888;
+          box-shadow: 5px 10px 8px #888888;
 }
 
 .subtitle {
@@ -216,6 +219,17 @@ img.right.transition2 {
 .portfolio-container a img {
   border-radius: 1em;
   margin-bottom: 2em;
+}
+
+.well {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6e00ff96), to(#6E00FF));
+  background-image: linear-gradient(#6e00ff96, #6E00FF);
+  color: #E5D5FA;
+}
+
+.well legend {
+  color: white;
+  font-size: 32px;
 }
 
 @media only screen and (min-width: 800px) {
