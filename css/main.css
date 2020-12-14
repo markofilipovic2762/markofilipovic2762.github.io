@@ -62,7 +62,7 @@ header .logo {
   font-family: 'Poppins', arial;
   font-size: 20px;
   color: #02f7ff;
-  font-weight: bold;
+  text-decoration: none;
 }
 
 header ul {
