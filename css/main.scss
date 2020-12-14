@@ -51,8 +51,9 @@ header {
     padding: 2em;
 
     .logo {
-        font-family: 'Handlee',
-            cursive;
+        // font-family: 'Handlee',
+        //     cursive;
+        font-family: 'Poppins', arial;
         font-size: 20px;
         color: #02f7ff;
         font-weight: bold;
@@ -218,9 +219,19 @@ img.right.transition2 {
     background-image: linear-gradient(#6e00ff96, #6E00FF);
     color: #E5D5FA;
 
+    .btn {
+        color: black
+    }
+
     legend {
         color: white;
         font-size: 32px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    img.right.transition2 {
+        margin-top: 30px;
     }
 }
 

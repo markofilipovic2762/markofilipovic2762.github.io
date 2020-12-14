@@ -59,7 +59,7 @@ header {
 }
 
 header .logo {
-  font-family: 'Handlee', cursive;
+  font-family: 'Poppins', arial;
   font-size: 20px;
   color: #02f7ff;
   font-weight: bold;
@@ -227,9 +227,19 @@ img.right.transition2 {
   color: #E5D5FA;
 }
 
+.well .btn {
+  color: black;
+}
+
 .well legend {
   color: white;
   font-size: 32px;
+}
+
+@media only screen and (max-width: 800px) {
+  img.right.transition2 {
+    margin-top: 30px;
+  }
 }
 
 @media only screen and (min-width: 800px) {
