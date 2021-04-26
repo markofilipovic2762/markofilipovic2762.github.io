@@ -17,7 +17,8 @@
 
     <div class="nav-container">
         <header>
-            <a href="index.html" class="logo">Marko Filipovic</a>
+            <!-- <a href="index.html" class="logo">Marko Filipovic</a> -->
+            <div class="logo"></div>
 
             <nav class="text-align-right">
                 <ul>
@@ -26,7 +27,18 @@
                     <li><a href="#contact">Hire me</a></li>
                 </ul>
             </nav>
+            <a onclick="openNav()" class="menu" href="#"><i class="fas fa-bars fa-2x"></i></a>
         </header>
+
+        <!-- Just for mobile phones-->
+        <div id="mobile_menu" class="overlay">
+            <a class="close" onclick="closeNav()">&times;</a>
+            <div class="overlay_content">
+                <a onclick="closeNav()" href="#work">My work</a>
+                <a onclick="closeNav()" href="#skills">My skills</a>
+                <a onclick="closeNav()" href="#contact">Hire me</a> 
+            </div>
+        </div>
         <div class="social-header">
             <ul>
                 <li><a href="https://www.linkedin.com/in/markofilipovicsd/"><img src="images/linkedin-logo.png"
@@ -222,6 +234,14 @@
     <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
 
     <script>
+        function openNav() {
+            document.getElementById("mobile_menu").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mobile_menu").style.width = "0";
+        }
+
         gsap.registerPlugin(ScrollTrigger);
         var tl = gsap.timeline();
 

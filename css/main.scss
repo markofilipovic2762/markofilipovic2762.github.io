@@ -8,6 +8,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'Poppins', arial;
+    font-size: 18px;
 }
 
 ul {
@@ -20,9 +21,9 @@ a {
     text-decoration: none;
 }
 
-img {
-    width: 100%;
-}
+// img {
+//     width: 100%;
+// }
 
 .zoom-in {
     transition: transform .5s, visibility .5s;
@@ -48,15 +49,20 @@ nav {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 2em;
+    padding: 1em;
 
     .logo {
         // font-family: 'Handlee',
         //     cursive;
-        font-family: 'Poppins', arial;
-        font-size: 20px;
-        color: #02f7ff;
-        text-decoration: none;
+        // font-family: 'Poppins', arial;
+        // font-size: 20px;
+        // color: #02f7ff;
+        // text-decoration: none;
+        background-image: url("/markofilipovic2762.github.io/images/logo.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 196px;
+        height: 46px;
     }
 
     ul {
@@ -68,6 +74,19 @@ header {
         }
     }
 
+}
+
+nav {
+    .text-align-right {
+        ul {
+            li{
+                text-align: center;
+            }
+            
+        }
+        
+
+    }
 }
 
 .social-header,
@@ -228,12 +247,66 @@ img.right.transition2 {
         font-size: 32px;
     }
 }
+/*  MOBILE NAV */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    opacity: 0.95;
+    background-color: #24252A;
+    overflow-x: hidden;
+    transition: all 0.5s ease 0s;
+}
+
+.overlay_content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay a{
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s ;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #0088a9;
+}
+
+.overlay .close {
+    position: absolute;
+    top:20px;
+    right: 45px;
+    font-size: 60px;
+}
+.menu {
+    display: none;
+}
 
 @media only screen and (max-width:800px) {
     img.right.transition2 {
         margin-top: 30px;
     }
+    nav {
+       display: none;
+    }
+    .menu {
+        display: inline;
+    }
+    .zoom-in {
+        img {
+            width: 100%;
+        }
+    }
 }
+
 
 @media only screen and (min-width: 800px) {
 
